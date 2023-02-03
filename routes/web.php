@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,4 +35,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/produk', [ProdukController::class,'index'])->middleware(['web','guest'])->name('produk');
 
 Route::get('/checkout',[CheckoutController::class,'check'])->middleware(['web','guest'])->name('checkout');
+Route::get('/login',[LoginController::class,'masuk'])->middleware(['web','guest'])->name('login');
+Route::get('/rincian',[DetailController::class,'rinci'])->middleware(['web','guest'])->name('rincian');
+
 require __DIR__.'/auth.php';

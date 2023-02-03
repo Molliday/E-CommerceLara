@@ -1,6 +1,5 @@
 
 <x-app-layout>
- 
   <!-- Header-->
   <header class="bg-danger py-5">
             <div class="container px-4 px-lg-5 my-5">
@@ -29,7 +28,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Details</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{{route('rincian')}}">Details</a></div>
                             </div>
                         </div>
                     </div>
